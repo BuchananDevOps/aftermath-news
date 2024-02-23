@@ -1,19 +1,19 @@
-'use client'
+"use client"
 
-import { useState } from 'react'
-import Link from './Link'
-import headerNavLinks from '@/data/headerNavLinks'
+import { useState } from "react"
+import Link from "./Link"
+import headerNavLinks from "@/data/headerNavLinks"
 
 const MobileNav = () => {
   const [navShow, setNavShow] = useState(false)
 
   const onToggleNav = () => {
-    setNavShow((status) => {
+    setNavShow(status => {
       if (status) {
-        document.body.style.overflow = 'auto'
+        document.body.style.overflow = "auto"
       } else {
         // Prevent scrolling
-        document.body.style.overflow = 'hidden'
+        document.body.style.overflow = "hidden"
       }
       return !status
     })
@@ -21,7 +21,11 @@ const MobileNav = () => {
 
   return (
     <>
-      <button aria-label="Toggle Menu" onClick={onToggleNav} className="sm:hidden">
+      <button
+        aria-label="Toggle Menu"
+        onClick={onToggleNav}
+        className="sm:hidden"
+      >
         <svg
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 20 20"
@@ -37,11 +41,15 @@ const MobileNav = () => {
       </button>
       <div
         className={`fixed left-0 top-0 z-10 h-full w-full transform bg-white opacity-95 duration-300 ease-in-out dark:bg-gray-950 dark:opacity-[0.98] ${
-          navShow ? 'translate-x-0' : 'translate-x-full'
+          navShow ? "translate-x-0" : "translate-x-full"
         }`}
       >
         <div className="flex justify-end">
-          <button className="mr-8 mt-11 h-8 w-8" aria-label="Toggle Menu" onClick={onToggleNav}>
+          <button
+            className="mr-8 mt-11 h-8 w-8"
+            aria-label="Toggle Menu"
+            onClick={onToggleNav}
+          >
             <svg
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 20 20"
@@ -57,7 +65,7 @@ const MobileNav = () => {
           </button>
         </div>
         <nav className="fixed mt-8 h-full">
-          {headerNavLinks.map((link) => (
+          {headerNavLinks.map(link => (
             <div key={link.title} className="px-12 py-4">
               <Link
                 href={link.href}
