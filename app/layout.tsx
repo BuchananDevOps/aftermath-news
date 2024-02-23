@@ -72,7 +72,9 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       <meta name="msapplication-TileColor" content="#000000" />
       <meta name="theme-color" media="(prefers-color-scheme: light)" content="#fff" />
       <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#000" />
+      <meta name="google-adsense-account" content="ca-pub-7047434964992934" />
       <link rel="alternate" type="application/rss+xml" href="/feed.xml" />
+      <script async src="https://www.googletagmanager.com/gtag/js?id=G-4LTF7GQJBY" />
       <body className="bg-white text-black antialiased dark:bg-gray-950 dark:text-white">
         <ThemeProviders>
           <Analytics analyticsConfig={siteMetadata.analytics as AnalyticsConfig} />
