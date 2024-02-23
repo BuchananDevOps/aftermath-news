@@ -75,6 +75,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       <meta name="google-adsense-account" content="ca-pub-7047434964992934" />
       <link rel="alternate" type="application/rss+xml" href="/feed.xml" />
       <script async src="https://www.googletagmanager.com/gtag/js?id=G-4LTF7GQJBY" />
+      <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7047434964992934" />
       <body className="bg-white text-black antialiased dark:bg-gray-950 dark:text-white">
         <ThemeProviders>
           <Analytics analyticsConfig={siteMetadata.analytics as AnalyticsConfig} />
