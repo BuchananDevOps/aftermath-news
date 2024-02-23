@@ -33,3 +33,69 @@ input:-webkit-autofill:focus {
 .katex-display {
   overflow: auto hidden;
 }
+
+.privacy-section {
+}
+
+.privacy-p {
+  margin-bottom: 15px;
+}
+.privacy-ul {
+  padding-left: 20px;
+  list-style-type: disc;
+  list-style-position: outside;
+}
+
+.privacy-ul li {
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.privacy-ol {
+  list-style: decimal;
+  list-style-position: inside;
+}
+
+.privacy-ol li {
+}
+
+.privacy-ol li a {
+  color: blue;
+}
+
+.anchor {
+  color: blue;
+}
+
+.anchor:hover {
+  text-decoration: underline;
+}
+
+.privacy-ol li a:hover {
+  text-decoration: underline;
+}
+
+.privacy-h2 {
+  font-weight: 700;
+  font-size: 22px;
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+
+.privacy-h3 {
+  font-weight: 700;
+  font-size: 18px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.privacy-h4 {
+  font-weight: 700;
+  font-size: 16px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  text-decoration: underline;
+}
+
+.privacy-table {
+}
