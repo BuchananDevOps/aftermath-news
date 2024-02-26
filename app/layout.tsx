@@ -10,7 +10,6 @@ import Footer from "@/components/Footer"
 import siteMetadata from "@/data/siteMetadata"
 import { ThemeProviders } from "./theme-providers"
 import { Metadata } from "next"
-import Script from "next/script"
 
 const space_grotesk = Space_Grotesk({
   subsets: ["latin"],
@@ -109,22 +108,7 @@ export default function RootLayout({
         name="google-site-verification"
         content="1viZbs916mCXyA-bribBdgTlkuaSik_E8Z28-npCXi0"
       />
-      <Script
-        async
-        src="https://www.googletagmanager.com/gtag/js?id=G-4LTF7GQJBY"
-      />
-      <Script id="google-analytics">
-        {`
-          window.dataLayer = window.dataLayer || [];
-          function gtag(){dataLayer.push(arguments);}
-          gtag('js', new Date());
-          gtag('config', 'G-4LTF7GQJBY');
-        `}
-      </Script>
-      <Script
-        async
-        src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7047434964992934"
-      />
+
       <body className="bg-white text-black antialiased dark:bg-gray-950 dark:text-white">
         <ThemeProviders>
           <Analytics
